@@ -194,13 +194,7 @@ public class ProductoData {
 
             ps.setInt(1, cant);
             ps.setInt(2, idPro);
-           
-     
-
-             ps.executeUpdate();
-
-           
-            
+            ps.executeUpdate();
             ps.close();
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error al acceder a la tabla 'producto '/" + ex.getMessage());
@@ -217,18 +211,11 @@ public class ProductoData {
 
             ps.setInt(1, precio);
             ps.setInt(2, idPro);
-           
-     
-
-             ps.executeUpdate();
-
-           
-            
+            ps.executeUpdate();
             ps.close();
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error al acceder a la tabla 'producto '/" + ex.getMessage());
         }
-        
         return pre;
     }
     
